@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedApp</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <script defer type="text/javascript" src="bundle_patients.js"></script>
+  </head>
+  <body>
+    <div class="tabs is-centered">
+      <ul>
+        <li><a href="RDVs.html">Rendez-vous</a></li>
+        <li class="is-active"><a href="patients.html">Patients</a></li>
+      </ul>
+    </div>
+    <div id="list_patients" style="margin: 10px;">
+      <p class="title is-5" style="text-align: center;">Liste des Patients</p>
+
+      <div id="table_patients" class="box" style="margin: 10px;">
+        <table
+          style="width: 100%;"
+          class="table is-hoverable"
+          id="table_patients"
+        >
+          <tr>
+            <th>Nom</th>
+            <th>Age</th>
+            <th>Adresse</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

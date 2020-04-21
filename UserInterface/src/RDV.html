@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <script defer type="text/javascript" src="bundle_RDV.js"></script>
+    <link rel="stylesheet" href="RDV.css" />
+    <title>MedApp</title>
+  </head>
+  <body>
+    <div class="tabs is-centered">
+      <ul>
+        <li class="is-active"><a href="RDVs.html">Rendez-vous</a></li>
+        <li><a href="patients.html">Patients</a></li>
+      </ul>
+    </div>
+    <p class="title is-5" id="home_title">Rendez-vous</p>
+    <div id="today_div">
+      <div class="card" id="rdv_today">
+        <div class="rdv_info">
+          <div class="rdv_info_component">
+            <label>Date : </label>
+            <div class="label_info">
+              <input class="input is-primary" type="date" id="date" readonly />
+            </div>
+          </div>
+          <div class="rdv_info_component">
+            <label>Heure : </label>
+            <div class="label_info">
+              <input class="input is-primary" type="time" id="time" readonly />
+            </div>
+          </div>
+          <div class="rdv_info_component">
+            <label>Object : </label>
+
+            <div class="label_info">
+              <textarea
+                class="textarea is-primary"
+                id="textarea"
+                data-id=""
+                rows="2"
+                readonly
+              ></textarea>
+            </div>
+          </div>
+          <div class="rdv_info_component">
+            <label>Patient : </label>
+            <div class="select is-primary" id="select_patients_pop">
+              <select id="patients_popup" disabled> </select>
+            </div>
+          </div>
+
+          <div class="rdv_info_component">
+            <button
+              id="imprimer_rdv"
+              class="button is-warning"
+              style="margin: 5%;"
+            >
+              Imprimer
+            </button>
+            <button
+              id="modifier_rdv"
+              class="button is-success"
+              style="margin: 5%;"
+            >
+              Modifier
+            </button>
+            <button
+              id="save_rdv"
+              class="button is-success"
+              style="margin: 5%; display: none;"
+            >
+              Save
+            </button>
+            <button
+              id="supprimer_rdv"
+              class="button is-danger"
+              style="margin: 5%;"
+            >
+              Supprimer
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script></script>
+  </body>
+</html>
