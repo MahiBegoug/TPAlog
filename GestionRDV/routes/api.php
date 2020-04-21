@@ -28,7 +28,7 @@ Route::get('showRdvPatient/{id}','RendvController@showRdvPatient');
 Route::post('createRdv','RendvController@createRdv');
 Route::delete('destroyRdv/{id}','RendvController@deleteRDV');
 Route::post('modifieRdv/{id}','RendvController@modifierRdv');
-
+Route::get('showbyDate/{date}','RendvController@showRdvDate');
 
 /**
  *    Patient

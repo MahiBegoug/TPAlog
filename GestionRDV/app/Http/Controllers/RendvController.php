@@ -35,4 +35,9 @@ class RendvController extends Controller
     {
         return response()->json(DB::table('rendvs')->where('id','=',$id)->delete());
     }
+
+    public function showRdvDate($date)
+    {
+        return response()->json(DB::table('rendvs')->where('dateOfvisiting','=',$date)->get()->toArray());
+    }
 }
