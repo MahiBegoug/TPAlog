@@ -45,7 +45,7 @@
     }
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "browserify": "^16.5.1",
     "bulma": "^0.8.2",
     "bulma-calendar": "^6.0.7",
